@@ -38,7 +38,7 @@
   <body>
   <article class="markdown-body">
   <h1>YodaHost</h1>
-    <p>Free* image hosting for <span id="examples"></span></p>
+	  <p>A decent yet free* image hosting for <span id="examples"></span>. In closed beta. Apply in <a href="https://discord.gg/windows">our Discord server.</a></p>
 	  <h3>Stats</h3>
 	  <ul>
 		  <li><b><?php strtok(system("du -sh ./images "), " ")?></b> diskspaced used</li>
