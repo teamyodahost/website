@@ -41,17 +41,19 @@
 	  <p>A decent yet free* image hosting for <span id="examples"></span>. In closed beta. Apply in <a href="https://discord.gg/windows">our Discord server.</a></p>
 	  <h3>Stats</h3>
 	  <ul>
-		  <li><b><?php echo str_replace(system("du -sh ./images"), "	./images", ""); ?></b> diskspaced used</li>
+		  <li><b><?php echo strtok(system("du -sh ./images"), " "); ?></b> diskspaced used</li>
 		  <li><b><?php echo count(scandir("./images/")); ?></b> files stored</li>
 	  </ul>
 </article>
     <footer>
       <script src="https://unpkg.com/typewriter-effect@2.3.1/dist/core.js"></script>
       <script>
-new Typewriter('#examples', {
+var t = new Typewriter('#examples', {
   strings: ['Discord', 'Guilded', 'Hiven', 'Twitter', 'Facebook', 'Tumblr', 'YouTube', 'Whatsapp', 'Messenger', 'Instagram', 'TikTok', 'Reddit', 'LinkedIn', 'Snapchat', 'Pintrest', 'Telegram', 'Medium', 'Signal'],
   autoStart: true,
+  loop: true
 });
+	      
       </script>
     </footer>
   </body>
