@@ -42,7 +42,7 @@
 	  <h3>Stats</h3>
 	  <ul>
 		  <li><b><?php str_replace(system("du -sh"), " ./images", ""); ?></b> diskspaced used</li>
-		  <li><b><?php sizeof(scandir("./images/")); ?></b> files stored</li>
+		  <li><b><?php echo count(scandir("./images/")); ?></b> files stored</li>
 	  </ul>
 </article>
     <footer>
