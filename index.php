@@ -48,7 +48,7 @@
     <footer>
       <script src="https://unpkg.com/typewriter-effect@2.3.1/dist/core.js"></script>
       <script>
-new Typewriter('#everything', {
+new Typewriter('#examples', {
   strings: ['Discord', 'Guilded', 'Hiven', 'Twitter', 'Facebook', 'Tumblr', 'YouTube', 'Whatsapp', 'Messenger', 'Instagram', 'TikTok', 'Reddit', 'LinkedIn', 'Snapchat', 'Pintrest', 'Telegram', 'Medium', 'Signal'],
   autoStart: true,
 });
