@@ -55,7 +55,7 @@ var t = new Typewriter('#examples', {
 });
 	var platforms = ['Discord', 'Guilded', 'Hiven', 'Twitter', 'Facebook', 'Tumblr', 'YouTube', 'Whatsapp', 'Messenger', 'Instagram', 'TikTok', 'Reddit', 'LinkedIn', 'Snapchat', 'Pintrest', 'Telegram', 'Medium', 'Signal']      
 	setInterval(function(){ 
-t.forEach(i=>{
+platforms.forEach(i=>{
 t.pauseFor(2500)
   .typeString(i)
   .pauseFor(300)
