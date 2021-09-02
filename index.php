@@ -41,8 +41,8 @@
 	  <p>A decent yet free* image hosting for <span id="examples"></span>. In closed beta. Apply in <a href="https://discord.gg/windows">our Discord server.</a></p>
 	  <h3>Stats</h3>
 	  <ul>
-		  <li><b><?php strtok(system("du -sh ./images "), " ")?></b> diskspaced used</li>
-		  <li><b><?php count(scandir("./images/"));?></b> files stored</li>
+		  <li><b><?php str_replace(system("du -sh"), " ./images", ""); ?></b> diskspaced used</li>
+		  <li><b><?php sizeof(scandir("./images/")); ?></b> files stored</li>
 	  </ul>
 </article>
     <footer>
