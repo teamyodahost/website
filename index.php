@@ -39,6 +39,11 @@
   <article class="markdown-body">
   <h1>YodaHost</h1>
     <p>Free* image hosting for <span id="examples"></span></p>
+	  <h3>Stats</h3>
+	  <ul>
+		  <li><b><?php strtok(system("du -sh ./images "), " ")?></b> diskspaced used</li>
+		  <li><b><?php count(scandir("./images/"));?></b> files stored</li>
+	  </ul>
 </article>
     <footer>
       <script src="https://unpkg.com/typewriter-effect@2.3.1/dist/core.js"></script>
