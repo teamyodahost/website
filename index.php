@@ -39,6 +39,7 @@
   <article class="markdown-body">
   <h1>YodaHost</h1>
 	  <p>A decent yet free* image hosting for <span id="examples"></span>. In closed beta. Apply in <a href="https://discord.gg/BNcA9nsV8s" target="_blank">our Discord server.</a></p>
+	  <p><b>NEW!</b> <a href="https://dashboard.baby-yoda.xyz">Try our new dashboard</a>, out in beta.</p>
 	  <h3>Stats</h3>
 	  <ul>
 		  <li><b><?php system("du -sh images | grep -o '^\S*'") ?></b> disk space used</li>
