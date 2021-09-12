@@ -45,7 +45,7 @@
 		  <li><b><?php system("du -sh images | grep -o '^\S*'") ?></b> disk space used</li>
 		  <li><b><?php echo count(scandir("./images/")); ?></b> files stored</li>
 		  <li><b><?php $ch = curl_init();
-         curl_setopt($ch, CURLOPT_URL, "https://even-field-grade.glitch.me/count");
+         curl_setopt($ch, CURLOPT_URL, "https://api.baby-yoda.xyz/count");
 	curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 	echo curl_exec($ch);curl_close($ch); ?></b> users</li>
 	  </ul>
