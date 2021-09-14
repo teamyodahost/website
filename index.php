@@ -1,3 +1,29 @@
+<?php
+date_default_timezone_set("America/New_York");
+  
+// browser cache
+header("Cache-Control: max-age=900");
+
+$filecachepath = "./cache/index.html";
+if (file_exists($filecachepath)){
+$cached=time()-filemtime($filecachepath);
+$cached_date = date("l\, F jS\, Y \@ h:i:s A",filemtime($filecachepath));
+  if ($cached < 900){
+    echo "<!-- Serving file from cache. Cached on $cached_date  -->";
+    echo file_get_contents($filecachepath);
+    die();
+  };
+};
+ob_start();
+
+function savecache($filecachepath){
+  $cachefile = fopen($filecachepath, "w");
+  fwrite($cachefile, ob_get_contents());
+  fclose($cachefile);
+  ob_end_flush();
+};
+?>
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -65,3 +91,4 @@ var t = new Typewriter('#examples', {
     </footer>
   </body>
 </html>
+<?php savecache($filecachepath); ?>
