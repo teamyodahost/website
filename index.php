@@ -1,6 +1,7 @@
 <?php
 date_default_timezone_set("America/New_York");
-  
+// website protection (private)
+require "./domains.php";
 // browser cache
 header("Cache-Control: max-age=900");
 
