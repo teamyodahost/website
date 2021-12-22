@@ -65,6 +65,7 @@ function savecache($filecachepath){
   <body>
   <article class="markdown-body">
   <h1>YodaHost</h1>
+	  <b>It's been fun</b> while it lasted. Well, this version anyways. We are starting a new hosting service. We don't know when or what, but coming! All of your files will move over and as of now, sign-ups are disabled. On move, account tokens will be changed in favor of a new system. Thanks <3 
 	  <p>A decent yet free* image hosting for <span id="examples"></span>. In closed beta. Apply in <a href="https://discord.gg/BNcA9nsV8s" target="_blank">our Discord server.</a></p>
 	  <p><b>NEW!</b> <a href="https://dashboard.baby-yoda.xyz">Try our new dashboard</a>, out in beta.</p>
 	  <h3>Stats</h3>
